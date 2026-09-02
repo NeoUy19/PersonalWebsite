@@ -1,0 +1,76 @@
+.vinylnav {
+  position: fixed;
+  top: 50%;
+  left: -100%;
+  width: 550px;
+  height: 575px;
+  padding: 0 30px;
+  background-color: black;
+  border-radius: 0 100% 100% 0;
+  transform: translateY(-50%);
+  transition: left 750ms ease;
+  z-index: 2;
+}
+
+.panel {
+  left: -1%;
+  position: relative;
+  width: 25px;
+  height: 625px;
+  background-color: pink;
+  transform: translateY(7.5%);
+  z-index: 5;
+}
+.disc {
+  position: absolute;
+  top: 92.5%;
+  width: 550px;
+  height: 575px;
+  border: none;
+  padding: 0 30px;
+
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transform: translateY(-92.5%);
+  left: 120%;
+  z-index: 3;
+    transition: left 750ms ease;
+
+}
+.disc:hover {
+  transform: translateY(-92.5%) scale(1.05);
+}
+.vinylnav.active {
+  left: -30%;
+  .disc {
+    left: 10%;
+    background-color: black;
+  }
+}
+
+ul {
+  position: relative;
+  color: white;
+  padding: 0;
+  z-index: 4;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  color: white;
+  padding: 20px 20px 10px 350px;
+  border-radius: 5px;
+}
+
+ul li a:hover,
+ul li a.active {
+  background-color: blue;
+}

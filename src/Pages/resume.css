@@ -1,0 +1,12 @@
+.ResumeFrame{
+    /* margin-top: -400px; */
+   max-width: 10,000px;   /* was 850px */
+  height: 450px;      /* was 1100px */
+}
+.links{
+    display: flex;
+      justify-content: center;
+
+    gap:16px;
+    margin-top: 12px;
+}
