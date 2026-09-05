@@ -1,50 +1,49 @@
 .vinylnav {
   position: fixed;
   top: 50%;
-  left: -100%;
-  width: 550px;
-  height: 575px;
+  left: -550px;
+  width: 525px;
+  height: 550px;
   padding: 0 30px;
   background-color: black;
   border-radius: 0 100% 100% 0;
-  transform: translateY(-50%);
+  transform: translateY(-272px);
   transition: left 750ms ease;
   z-index: 2;
 }
 
 .panel {
-  left: -1%;
+  left: -10px;
   position: relative;
   width: 25px;
   height: 625px;
   background-color: pink;
-  transform: translateY(7.5%);
+  transform: translateY(10%);
   z-index: 5;
 }
 .disc {
   position: absolute;
-  top: 92.5%;
-  width: 550px;
-  height: 575px;
+  top: 512px;
+  width: 525px;
+  height: 550px;
   border: none;
   padding: 0 30px;
 
   border-radius: 50%;
   background-color: black;
   cursor: pointer;
-  transform: translateY(-92.5%);
-  left: 120%;
+  transform: translateY(-94.5%);
+  left: 120px;
   z-index: 3;
-    transition: left 750ms ease;
-
+  transition: left 750ms ease;
 }
 .disc:hover {
-  transform: translateY(-92.5%) scale(1.05);
+  transform: translateY(-94.5%) scale(1.05);
 }
 .vinylnav.active {
-  left: -30%;
+  left: -350px;
   .disc {
-    left: 10%;
+    left: 80px;
     background-color: black;
   }
 }

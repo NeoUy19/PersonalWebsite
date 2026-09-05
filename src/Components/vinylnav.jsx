@@ -1,15 +1,19 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect} from "react";
 import "./vinylnav.css";
 
 export function VinylNav() {
   const [showNav, setShowNav] = useState(false);
+  const location = useLocation();
 
+   useEffect(() => {
+    setShowNav(false);
+  }, [location]);
   return (
     <>
       <div className="panel" />
       <div className={`vinylnav ${showNav ? "active" :""}`}>
-        <button type="button" className="disc" onClick={() => setShowNav(!showNav)} />
+        <button type="button" className="disc" onClick={() => setShowNav((prev) => !prev)} />
         <ul>
           <li>
             <Link to="/">Home</Link>

@@ -1,7 +1,12 @@
+
+.ResumePage{
+    text-align: center;
+    /* transform: translateY(-600px); */
+}
 .ResumeFrame{
-    /* margin-top: -400px; */
-   max-width: 10,000px;   /* was 850px */
-  height: 450px;      /* was 1100px */
+  width: 400px;   /* was 850px */
+  height: 475px;      /* was 1100px */
+
 }
 .links{
     display: flex;
