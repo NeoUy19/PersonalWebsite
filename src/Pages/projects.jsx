@@ -1,7 +1,7 @@
 export function Projects() {
-    return (
-        <>
-            <h1>No projects LOL</h1>
-        </>
-    )
+  return (
+    <>
+      <h1>No projects LOL</h1>
+    </>
+  );
 }

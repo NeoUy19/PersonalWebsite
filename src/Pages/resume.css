@@ -1,17 +1,16 @@
-
-.ResumePage{
-    text-align: center;
-    /* transform: translateY(-600px); */
+.ResumePage {
+  position: fixed;
+  text-align: center;
+  left: 500px;
 }
-.ResumeFrame{
-  width: 400px;   /* was 850px */
-  height: 475px;      /* was 1100px */
-
+.ResumeFrame {
+  width: 400px; /* was 850px */
+  height: 475px; /* was 1100px */
 }
-.links{
-    display: flex;
-      justify-content: center;
+.links {
+  display: flex;
+  justify-content: center;
 
-    gap:16px;
-    margin-top: 12px;
+  gap: 16px;
+  margin-top: 12px;
 }

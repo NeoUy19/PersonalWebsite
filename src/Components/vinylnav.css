@@ -1,25 +1,23 @@
 .vinylnav {
   position: fixed;
-  top: 50%;
+  top: 135px;
   left: -550px;
   width: 525px;
   height: 550px;
   padding: 0 30px;
   background-color: black;
   border-radius: 0 100% 100% 0;
-  transform: translateY(-272px);
   transition: left 750ms ease;
   z-index: 2;
 }
-
-.panel {
-  left: -10px;
-  position: relative;
-  width: 25px;
+.DiscHolder {
+  position: fixed;
+  left: 0px;
+  top: 90px;
+  width: 20px;
   height: 625px;
-  background-color: pink;
-  transform: translateY(10%);
-  z-index: 5;
+  background-color: Pink;
+  z-index: 4;
 }
 .disc {
   position: absolute;
