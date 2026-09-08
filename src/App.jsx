@@ -10,24 +10,22 @@ import { Resume } from "./Pages/resume";
 import { AboutMe } from "./Pages/aboutme";
 
 function App() {
-  // const [ showMav, setShowNav] = useState(false)
 
   return (
     <>
-      <RemoveScroll>
+      {/* <RemoveScroll> */}
         <div className="main">
           <Router>
             <VinylNav />
             <Routes>
               <Route path="/" element={<Home />} />
-  
               <Route path="/aboutme" element={<AboutMe />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Router>
         </div>
-      </RemoveScroll>
+      {/* </RemoveScroll> */}
     </>
   );
 }

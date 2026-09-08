@@ -1,0 +1,22 @@
+.ampage {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 225px;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+}
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.lowermain {
+    margin-top:250px;
+}
+.secondary {
+  flex: 2;
+  margin-top: 300px;
+}
