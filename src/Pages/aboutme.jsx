@@ -1,7 +1,10 @@
 import "./aboutme.css";
+import { RemoveScroll } from "react-remove-scroll";
+
 export function AboutMe() {
   return (
     <>
+    <RemoveScroll>
       <div className="ampage">
 
         <div className="Main">
@@ -9,8 +12,9 @@ export function AboutMe() {
           <p> Hi! My name is Neo Uy. I am a computer science major at the University of Illinois Chicago (UIC).
             I am interested in software engineering, cloud computing, machine learning, and data science.
             I love building projects that challenge my knowledge and help me improve as a programmer and problem solver. 
-            
           </p>
+            <img src="/me.png" alt="Me!" className="portrait" />
+
              <p className="lowermain">
                 Right now, I am aiming for an internship for summer 2027, ideally something backend or cloud-focused, which is why I have been building toward AWS. 
                 First with the certificate and then deployment and practice with AWS tools.
@@ -25,6 +29,7 @@ export function AboutMe() {
             </p>
         </div>
       </div>
+      </RemoveScroll>
     </>
   );
 }

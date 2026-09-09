@@ -1,4 +1,3 @@
-// import "./index.css"
 import "./App.css";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { RemoveScroll } from "react-remove-scroll";

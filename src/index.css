@@ -1,20 +1,42 @@
-.main {
-  /* height: 100vh;
-  padding: 40px 40px 40px 300px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden; */
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Inter:wght@400;500&display=swap');
+:root {
+  --bg: #1c1815;
+  --surface: #241f1a;
+  --text: #e8dfd0;
+  --text-dim: rgba(232, 223, 208, 0.6);
+  --accent: #a3b18a;
+  --border: rgba(232, 223, 208, 0.14);
+  --nav-clearance: 300px;
 }
 
+
+h1, h2 {
+  font-family: 'Limelight', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 h1 {
   font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.main {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+p {
+  line-height: 1.7;
+  max-width: 65ch;
 }
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+ 
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
