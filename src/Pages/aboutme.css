@@ -1,4 +1,6 @@
 .ampage {
+
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -6,7 +8,14 @@
   padding-left: 225px;
   padding-bottom: 300px;
   box-sizing: border-box;
+
+   background: linear-gradient(160deg, #2a2a28 0%, #161513 100%);
+  color: #e8e4dc;
+  min-height: 100vh;
+  padding-left: 300px;
+  box-sizing: border-box;
 }
+
 
 .Main{
     display: flex;

@@ -20,6 +20,7 @@
   z-index: 4;
 }
 .disc {
+    
   position: absolute;
   top: 512px;
   width: 525px;
@@ -27,16 +28,24 @@
   border: none;
   padding: 0 30px;
 
+
+  background-color: #0d0d0d;
+  background-image: repeating-radial-gradient(
+    circle at center,
+    #0d0d0d 0 3px,
+    #2a2929 3px 4px
+  );
+
   border-radius: 50%;
-  background-color: black;
+  /* background-color: black; */
   cursor: pointer;
   transform: translateY(-94.5%);
   left: 120px;
   z-index: 3;
-  transition: left 750ms ease;
+  transition: transform 600ms ease,  left 750ms ease;
 }
 .disc:hover {
-  transform: translateY(-94.5%) scale(1.05);
+  transform: translateY(-94.5%) rotate(15deg)
 }
 .vinylnav.active {
   left: -350px;
@@ -58,16 +67,25 @@ ul li {
   margin: 10px 0;
 }
 
-ul li a {
+/* ul li a {
   text-decoration: none;
   font-size: 16px;
   display: block;
   color: white;
   padding: 20px 20px 10px 350px;
   border-radius: 5px;
+  
+} */
+.vinylnav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 20px;
+  margin-left: 350px;
+  border-radius: 20px;
 }
 
-ul li a:hover,
-ul li a.active {
-  background-color: blue;
+.vinylnav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
 }
