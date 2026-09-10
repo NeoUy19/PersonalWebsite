@@ -16,11 +16,10 @@
   top: 90px;
   width: 20px;
   height: 625px;
-  background-color: #B2AC88;
+  background-color: #b2ac88;
   z-index: 4;
 }
 .disc {
-    
   position: absolute;
   top: 512px;
   width: 525px;
@@ -28,7 +27,7 @@
   border: none;
   padding: 0 30px;
 
-    box-shadow:
+  box-shadow:
     0 0 0 1px rgba(232, 223, 208, 0.15),
     0 8px 30px rgba(0, 0, 0, 0.5);
   background-color: #0d0d0d;
@@ -39,15 +38,16 @@
   );
 
   border-radius: 50%;
-  /* background-color: black; */
   cursor: pointer;
   transform: translateY(-94.5%);
   left: 120px;
   z-index: 3;
-  transition: transform 600ms ease,  left 750ms ease;
+  transition:
+    transform 600ms ease,
+    left 750ms ease;
 }
 .disc:hover {
-  transform: translateY(-94.5%) rotate(15deg)
+  transform: translateY(-94.5%) rotate(15deg);
 }
 .vinylnav.active {
   left: -350px;
@@ -81,4 +81,39 @@ ul li {
 
 .vinylnav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .vinylnav {
+    width: 300px;
+    height: 300px;
+    left: -500px;
+  }
+
+  .vinylnav.active {
+    left: -300px;
+  }
+
+  .disc {
+    width: 300px;
+    height: 300px;
+    left: 225px;
+    top: 325px;
+  }
+  .DiscHolder {
+    top: 185px;
+    width: 5px;
+    height: 275px;
+  }
+
+  .vinylnav ul {
+  margin: 5px 0px;
+  margin-top: 100px;
+
+}
+  .vinylnav ul li a {
+    font-size: 12px;
+    margin-left: 275px;
+    padding: 1px 5px ;
+  }
 }

@@ -39,3 +39,21 @@
   border-radius: 2px;
   border: 1px solid var(--border);
 }
+
+@media (max-width: 768px) {
+  .ampage {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 60px;
+    margin-right: 0;
+  }
+
+  .secondary {
+    margin-top: 0;
+  }
+
+  .portrait {
+    width: 125px;
+    height: 125px;
+  }
+}

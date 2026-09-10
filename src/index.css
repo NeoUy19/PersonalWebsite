@@ -40,3 +40,9 @@ body {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+@media (max-width:768px) {
+  :root{
+    --nav-clearance: 40px;
+  }
+}
