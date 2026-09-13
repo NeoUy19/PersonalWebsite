@@ -22,7 +22,7 @@
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   padding: 32px 40px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 hr {
   width: 300px;
@@ -30,4 +30,21 @@ hr {
 }
 a {
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .background {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/homemob.svg");
+       padding-left: var(--nav-clearance);
+    padding-right: 50px;
+  }
+ 
+  .greeting {
+  max-width: 340px;
+}
+
+hr {
+  width: 100%;
+}
 }
