@@ -1,10 +1,10 @@
 import "./aboutme.css";
-import { RemoveScroll } from "react-remove-scroll";
+// import { RemoveScroll } from "react-remove-scroll";
 
 export function AboutMe() {
   return (
     <>
-    <RemoveScroll>
+    {/* <RemoveScroll> */}
       <div className="ampage">
 
         <div className="Main">
@@ -29,7 +29,7 @@ export function AboutMe() {
             </p>
         </div>
       </div>
-      </RemoveScroll>
+      {/* </RemoveScroll> */}
     </>
   );
 }
